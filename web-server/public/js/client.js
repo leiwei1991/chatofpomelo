@@ -212,7 +212,7 @@ $(document).ready(function() {
 	//deal with login button click.
 	$("#login").click(function() {
 		username = $("#loginUser").attr("value");
-		rid = $('#channelList').val();
+		rid = "room1";
 
 		if(username.length > 20 || username.length == 0 || rid.length > 20 || rid.length == 0) {
 			showError(LENGTH_ERROR);
